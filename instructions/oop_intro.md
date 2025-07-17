@@ -1,3 +1,5 @@
+# Objekt-orientiertes Programmieren in Python
+```python
 # Tier (Animal) - Basisklasse
 
       |\_/|
@@ -269,3 +271,22 @@ print(simba.brüllen())
 print(simba.rudel_jagd("Büffel"))
 print(simba.schleichen()) # Methode von Felidae
 
+```
+
+### Was ist hier passiert?
+
+**Objektorientierte Programmierung (OOP)** ist ein mächtiges Konzept in Python, das uns hilft, realistische Modelle unserer Welt in Software abzubilden. Statt einfach nur Funktionen zu schreiben, gruppieren wir **Daten (Attribute)** und **Verhalten (Methoden)** in sogenannten **Klassen**.
+
+- **Erweiterte Vererbungshierarchie mit Unterfamilien:**
+    - Wir behalten die **Basisklasse** `Tier` und die Zwischenklasse `Säugetier` bei.
+    - Neu sind zwei weitere Zwischenklassen, die wissenschaftliche Familien repräsentieren:
+        - `Canidae` (Hundeartige): Erbt von `Säugetier` und enthält gemeinsame Merkmale und Verhaltensweisen von Hunden und Wölfen, wie `kommunizieren()` und `spuren_lesen()`.
+        - `Felidae` (Katzenartige): Erbt ebenfalls von `Säugetier` und enthält gemeinsame Merkmale und Verhaltensweisen von Katzen, Tigern und Löwen, wie `schleichen()` und `lauern()`.
+    - Die spezifischen Tierklassen (`Hund`, `Wolf`, `Katze`, `Tiger`, `Löwe`) erben nun von ihren jeweiligen Familienklassen (`Canidae` oder `Felidae`), was die Modellierung noch präziser und logischer macht.
+    - Der `Bär` bleibt direkt unter `Säugetier`, da er in diesem Kontext keiner der neu eingeführten Unterfamilien zugeordnet wird.
+- **Realistischere Merkmale und Verhalten:**
+    - Attribute und Methoden wurden entsprechend der neuen Hierarchie verschoben oder hinzugefügt, um die spezifischen Eigenschaften der jeweiligen Familien und Arten widerzuspiegeln. Zum Beispiel ist `schleichen()` nun eine Methode der `Felidae`Klasse, da dies ein typisches Verhalten aller Katzenartigen ist.
+- **Polymorphismus (Verschiedengestaltigkeit):**
+    - Das Prinzip des Polymorphismus wird weiterhin angewendet. Methoden wie `vorstellen()` oder `fressen()` können von allen Tier-Objekten aufgerufen werden, während spezifischere Methoden wie `bellen()` (Hund), `heulen()` (Wolf), `miauen()` (Katze), `jagen()` (Wolf, Tiger) oder `brüllen()` (Bär, Löwe) nur von den entsprechenden Unterklassen zur Verfügung stehen. Die neuen Familienklassen `Canidae` und `Felidae` führen ebenfalls gemeinsame Verhaltensweisen für ihre Mitglieder ein.
+
+Dieses Beispiel demonstriert, wie OOP uns hilft, komplexe Systeme in logische, wiederverwendbare und gut organisierte Code-Blöcke zu unterteilen. Es macht den Code leichter verständlich, wartbar und erweiterbar, indem es die biologische Klassifikation in die Softwarearchitektur integriert.
