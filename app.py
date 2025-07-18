@@ -34,5 +34,12 @@ def get_topic_by_id(id):
     return jsonify(topic)
 
 
+@app.route('/skills/<id>', methods=['GET'])
+def get_skill_by_id(id):
+    skills = data_manager.read_data(SKILLS_FILE)
+    skill = next((skill for skill in skills if skill.get('id').lower() == id.lower()), None)
+    return jsonify(skill)
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
