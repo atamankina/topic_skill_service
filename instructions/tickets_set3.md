@@ -1,4 +1,4 @@
-## Lernpfad-Generator - Stufe 1, Tag 3 (Mittwoch) - Schritt-für-Schritt-Implementierung
+## Lernpfad-Generator - POST Endpukte
 
 Dies ist die detaillierte Schritt-für-Schritt-Anleitung zur Implementierung der Tickets für Tag 3. Heute konzentrieren wir uns auf das **Erstellen von Ressourcen** mittels `POST`-Anfragen.
 

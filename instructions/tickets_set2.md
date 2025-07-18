@@ -1,4 +1,4 @@
-## Lernpfad-Generator - Stufe 1, Tag 2 (Dienstag) - Schritt-für-Schritt-Implementierung (Erweitert mit Git-Branches)
+## Lernpfad-Generator - GET Endpunkte
 
 Dies ist die detaillierte Schritt-für-Schritt-Anleitung zur Implementierung der Hausaufgaben-Tickets für Tag 2. Konzentriert euch auf jedes Detail, um die Konzepte der Objektorientierten Programmierung (OOP) und des robusten Datenzugriffs zu verstehen.
 

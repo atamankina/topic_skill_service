@@ -1,4 +1,4 @@
-## Personalized Learning Path Generator - Stufe 1, Tag 4 (Donnerstag) - Schritt-für-Schritt-Implementierung
+## Personalized Learning Path Generator - PUT Endpunkte. DELETE Endpunkte
 
 Dies ist die detaillierte Schritt-für-Schritt-Anleitung zur Implementierung der Tickets für Tag 4. Heute vervollständigen wir die **CRUD-Operationen (Create, Read, Update, Delete)** für unsere Topics und Skills im `Topic & Skill Service`.
 
